@@ -79,7 +79,7 @@ func postTb(c *colly.Collector, csrfToken string, tagertip string) {
 var targetip string
 func main() {
 	flagSet := goflags.NewFlagSet()
-	flagSet.SetDescription("Test program to demonstrate goflags options")
+	flagSet.SetDescription("dnsdump, dump result from dnsdumpster")
 	flagSet.CreateGroup("input", "INPUT",
 		flagSet.StringVar(&targetip,"ip","","Target Ip"),
 	)
